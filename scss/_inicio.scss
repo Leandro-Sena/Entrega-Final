@@ -1,0 +1,99 @@
+$logo-hover: 0px 0px 15px 15px #8b8b8b;
+header {
+    .logo {
+        width: 250px;
+        opacity: 0.5;
+        background-color: white;
+        border-radius: 50%;
+        position: relative;
+        animation-duration: 3s;
+        animation-delay: 1;
+
+        &:hover {
+            // opacity: 1;
+            width: 250px;
+            border-width: 10%;
+            box-shadow: $logo-hover;
+        }
+    }
+}
+.galeria {
+        color: white;
+}
+.contenedor-galeria {
+    margin: 0 auto;
+    margin-block-start: 40px;
+
+    img {
+        margin: 0 auto;
+        opacity: 0.5;
+        width: 1000px;
+
+        &:hover {
+            transform: scale(1.2, 1.2);
+            opacity: 1;
+        }
+    }
+}
+
+    .contenedorGrupo {
+        width:90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-block-start: 40px;
+        margin-left: 6%;
+        &:before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: #8b8b8b;
+        }
+
+    }
+    .tarjeta {
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .tarjeta__img{
+        width:300px;
+        margin-right: 30px;
+        border-radius: 15px;
+        margin-top: 7%;
+    }
+    .tarjeta__titulo {
+        width: 50%;
+        padding: 50px;
+        font-size:1.5rem;
+        margin-block-start: -205px;
+        margin-left: 24%;
+            color: #ffffff;
+    }
+    .tarjeta__parrafo{
+        color: #ffffff;
+        line-height: 28px;
+        margin-inline: -10px;
+        margin-left: -41%;
+    margin-block-start: 9%;
+    }
+    main{
+        text-align: center;
+        .nosotros, .continuacion{
+            color:#ffffff;
+            width: 50%;
+            margin-left: 25%;
+            margin-block-start: 1%;
+        }
+        .frase{
+            color:#ffffff;
+            width: 15%;
+            font-style:oblique;
+            text-align: center;
+            margin-left: 42%;
+        
+    }
+    .titulo{
+            color: #ffffff;
+    }
+    }

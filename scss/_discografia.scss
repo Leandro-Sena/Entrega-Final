@@ -1,0 +1,63 @@
+.disco {
+    font-size: 2rem;
+    padding: 15%;
+    margin-top: -12%;
+    color: #ffffff;
+}
+.parrafoDiscos{
+    color: #ffffff;
+    font-size: 1rem;
+	font-family: "Bree Serif", serif;
+    margin-top: -13%;
+    margin-left: -14%;
+    width: 118%;
+}
+
+.albumes {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2%;
+    margin: 0 auto;
+    &:hover {
+        color: #ffffff;
+    }
+}
+.card{
+    border: 2px solid #e40098;
+}
+
+.album {
+    width: 100%;
+    opacity: 0.5;
+    border: 2px solid #e40098;
+
+    &:hover {
+        color: #fafffd;
+        opacity: 1;
+    }
+}
+
+// .tabla {
+//     background-color: #ffefa1;
+//     font-style: oblique;
+//     border-collapse: collapse;
+
+//     th {
+//         color: #046582;
+
+//         td {
+//             color: black;
+//             font-variant: small-caps;
+
+//             ul {
+//                 font-style: italic;
+
+//                 li {
+//                     list-style: none;
+//                 }
+//             }
+//         }
+//     }
+// }

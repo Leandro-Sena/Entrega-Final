@@ -1,0 +1,148 @@
+$color-texto: #dde2e2;
+@mixin historia($ancho, $color-texto: #dde2e2) {
+	color: $color-texto;
+	font-size: 0.9rem;
+	font-family: "Bree Serif", serif;
+	width: $ancho;
+}
+
+.contenedor {
+	// @include historia(90%, -texto);
+	// max-width: 1000px;
+	// margin: 0 auto;
+	// margin-block-start: 40px;
+	width: 90%;
+	max-width: 80vw;
+	margin: 17% auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas:
+		" historiaJim historiaJim historiaJim historiaJim  "
+		" historiaRay historiaRay historiaRay historiaRay"
+		" historiaJohn historiaJohn historiaJohn historiaJohn"
+		"historiaRobby historiaRobby historiaRobby historiaRobby";
+
+	gap: 5%;
+	align-items: baseline;
+}
+.integrantes {
+	color: #ffffff;
+	font-size: 2.5rem;
+	// width: 200%;
+	margin-top: -38%;
+}
+
+// Historia Jim
+.historiaJim {
+	grid-area: historiaJim;
+}
+
+.fotoJim {
+	grid-area: fotoJim;
+	@include historia(35%, -texto);
+	object-fit: cover;
+	height: 56%;
+	border-radius: 15px;
+	margin-left: -65%;
+}
+
+.nombre {
+	@include historia(38%, -texto);
+	padding: 4%;
+	font-size: 1.5rem;
+
+		color: #ffffff;
+}
+.historia {
+	@include historia($color-texto);
+	margin-block-start: 25%;
+	text-align: justify;
+	width: 39%;
+}
+
+// Historia Ray
+.historiaRay {
+	grid-area: historiaRay;
+	margin-block-start: -35%;}
+.parrafoRay {
+	@include historia(41%, $color-texto);
+	font-size: 0.9rem;
+    font-family: "Bree Serif", serif;
+    text-align: justify;
+    margin-block-start: 41%;
+    margin-left: 61%;
+}
+.nombreRay {
+	font-size: 1.5rem;
+    margin-block-start: -40%;
+    text-align: center;
+    margin-left: 64%;
+    color: #ffffff;
+}
+
+.fotoRay {
+	width: 38%;
+    height: 56%;
+    object-fit: cover;
+    margin-left: 62%;
+    border-radius: 15px;
+    margin-top: -17%;
+
+}
+
+// Historia john
+.historiaJohn{
+	margin: -50%  auto;
+
+}
+
+.fotoJohn {
+	width: 183%;
+	border-radius: 10%;
+}
+.nombreJohn {
+	width: 186%;
+	padding: 6%;
+	font-size: 1.5rem;
+	color: #ffffff;
+}
+.parrafoJohn {
+	color: #ffffff;
+	font-size: 0.9rem;
+	font-family: "Bree Serif", serif;
+	margin-block-start: 8%;
+    text-align: justify;
+    width: 164%;
+}
+
+// Historia de Robby
+
+.historiaRobby {
+	grid-area: historiaRobby;
+	margin-top: -7%;
+}
+.fotoRobby {
+	width: 38%;
+	height: 56%;
+	object-fit: cover;
+	margin-left: 63%;
+	border-radius: 15px;
+}
+.parrafoRobby {
+	color: #dde2e2;
+	font-size: 0.9rem;
+	font-family: "Bree Serif", serif;
+	width: #dde2e2;
+	text-align: justify;
+	margin-block-start: 1%;
+	width: 41%;
+	margin-left: 61%;
+}
+.nombreRobby {
+	color: #ffffff;
+	font-size: 1.5rem;
+	margin-block-start: -30%;
+	text-align: center;
+	margin-left: 64%;
+}

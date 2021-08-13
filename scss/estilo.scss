@@ -1,0 +1,374 @@
+@import "generales";
+@import "inicio";
+@import "historia";
+@import "discografia";
+@import "contacto";
+@import "footer";
+// @import "nosotros";
+$font-size: 1rem;
+$color-link: #b49252;
+
+@media only screen and (max-width: 768px) {
+    .contenedor {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            " historiaJim historiaJim historiaRay historiaRay  "
+            "historiaJohn historiaJohn historiaRobby historiaRobby";
+    }
+    .historia {
+        width: 100%;
+    margin-top: 46%;
+    }
+    .parrafoRobby {
+        margin-left: 10%;
+        width: 92%;
+    }
+    .fotoRobby {
+        width: 77%;
+        margin-left: 10%;
+        margin-top: 4%;
+    }
+    .nombreRobby {
+        margin-left: 10%;
+    }
+    .parrafoJohn {
+        width: -1%;
+    }
+    .historiaRay{
+        margin-block-start: 10%;
+    }
+    .parrafoRay {
+        width: 87%;
+    margin-left: 15%;
+    margin-top: 23%;
+    }
+    .nombreRay {
+        margin-block-start: -91%;
+    margin-left: 13%;
+    padding: 26%;
+    }
+    .fotoRay {
+        width: 44%;
+    margin-left: 15%;
+    margin-top: -39%;
+    }
+
+    .historiaRobby {
+        margin-top: -8%;
+    }
+    .integrantes {
+        margin-block-start: -91%;
+    margin-right: -93%;
+    margin-left: 15%;
+    text-align: center;
+    }
+    .fotoJim {
+        width: 45%;
+    margin-left: -6%;
+    margin-block-start: -38%;
+    }
+    .nombre {
+        margin-block-start: 5%;
+        margin-left: 26%;
+    }
+
+.tarjeta__img{
+    margin-left: 32%;
+    margin-top: -31%;
+}
+
+    .tarjeta__parrafo{
+        margin-left: -62%;
+    margin-top: 43%;
+
+    }
+    
+    .history{
+        margin-top: -70%;
+    margin-left: -33%;
+
+    }
+    .quienesSomos{
+         margin-top: 5%;
+    }
+    footer {
+        h4 {
+            margin-block-start: 55px;
+            font-size: $font-size;
+            font-weight: 500;
+            text-align: left;
+        }
+    }
+
+    .nav-link {
+        &:hover {
+            transform: none;
+        }
+    }
+    main{
+        .nosotros, .continuacion {
+            width: 88%;
+    margin-left: 5%;
+            text-align: justify;
+        }
+        .frase{
+            width: 50%;
+    margin-left: 22%;
+        }
+   }
+   .albumes{
+       display:grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: repeat(2, 1fr);
+       gap: 1%;
+       margin-left: 8%;
+   }
+   .disco{
+    margin-top:-11%;
+   }
+   .parrafoDiscos{
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: justify;
+    margin-left: -8%;
+    margin-top: -12%;
+   }
+@media only screen and (max-width: 425px) {
+    body {
+        width: 50%;
+        max-width: fit-content;
+    }
+    .carousel.pointer-event {
+        
+        width: 200%;
+        margin-top: -8%
+    }
+    .galeria{
+        margin-left: 80%;
+        margin-top: -13%;  
+    }
+    .tarjeta__parrafo{
+        width: 195%;
+        font-size: .8rem;
+        margin-left: -98%;
+        margin-right: -105%;
+        margin-top: 66%;    }
+    .tarjeta__img{
+        margin-top: -199%;
+        width: 68%;
+        margin-left: 72%;    }
+        .history{
+            margin-top: -283%;
+        margin-left: -96%;
+        }
+        .quienesSomos{
+            width: 100%;
+            margin-left: 10%;
+            margin-top: 14%;
+        }
+        main{
+            .nosotros, .continuacion {
+                width: 159%;
+            margin-left: 9%;
+                text-align: justify;
+            }
+            .frase{
+                width: 100%;
+    margin-left: 34%;
+            }
+            .titulo{
+                margin-left: 70%;
+            }
+       }
+ 
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+    .integrantes {
+        font-size: 1.5rem;
+        margin-block-start: -161%;
+        margin-left: 0%;
+    }
+
+    // Historia Jim
+    .historiaJim {
+        margin-left: 44%;
+    }
+    .historia {
+        width: 225%;
+        margin-left: -14%;
+        margin-top: 110%;
+    }
+    .fotoJim {
+        width: 124%;
+        object-fit: cover;
+        margin: auto;
+        margin-top: 57%;
+        margin-left: 35%;
+    }
+    .nombre {
+        font-size: 1rem;
+        padding: 1%;
+        margin-top: -1%;
+        margin-left: 64%;
+    }
+
+    // Historia Ray
+
+    .historiaRay {
+        margin-left: 72%;
+    }
+    .parrafoRay {
+        width: 266%;
+    margin-left: -65%;
+    margin-top: 121%;
+    }
+    .fotoRay {
+        width: 150%;
+        object-fit: cover;
+        margin: auto;
+        margin-top: 25%;
+    }
+    .nombreRay {
+        font-size: 1rem;
+    margin: auto;
+    padding: 34%;
+    margin-top: -221%;
+    }
+
+    // Historia john
+    .historiaJohn {
+        margin-left: 38%;
+        margin-top: auto;
+    }
+    .parrafoJohn {
+        width: 232%;
+        margin-top: -13%;
+    }
+    .fotoJohn {
+        width: 136%;
+        object-fit: cover;
+        margin-left: 44%;
+        margin-top: -102%;
+    }
+    .nombreJohn {
+        font-size: 1rem;
+        padding: 78%;
+        margin-top: -60%;
+        margin-left: 6%;
+    }
+
+    // hitoria Robby
+    .historiaRobby {
+        margin-left: 39%;
+    }
+    .parrafoRobby {
+        width: 234%;
+        margin-left: 0%;
+        margin-top: 6%;
+    }
+    .fotoRobby {
+        width: 120%;
+        object-fit: cover;
+        margin-top: -35%;
+        margin-left: 55%;
+    }
+    .nombreRobby {
+        font-size: 1rem;
+        padding: 34%;
+        margin-top: 64%;
+        margin-left: 58%;
+    }
+
+    // Discografia
+    // Discografia
+    .albumes {
+        display: flex;
+        flex-direction: column;
+        margin-left: 32%;
+    }
+    .parrafoDiscos {
+        width: 200%;
+        text-align: justify;
+        margin-left: -24%;
+    }
+    .disco {
+        font-size: 1.5rem;
+        padding: 5%;
+        margin-left: 43%;
+    }
+    .logo {
+        margin-left: 30%;
+    }
+
+    footer {
+        width: 200%;
+        h4 {
+            margin-block-start: 55px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: left;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .card{
+        margin-left: -10%;
+    }
+    .contenedorGrupo{
+        margin-top: 0%;
+    }
+    .tarjeta__parrafo{
+        margin-top: 118%;
+
+    }
+    .history{
+        margin-left: -105%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .contenedorGrupo{
+        margin-top: 0;
+    }
+    .history{
+        margin-left: -119%;
+    margin-top: -403%;
+    }
+    .tarjeta__parrafo{
+        margin-top: 100%;
+    }
+    .tarjeta__img{
+        margin-top: -319%
+    }
+    .contenedor {
+        margin-left: -13%;
+    }
+    .historiaRay {
+        width: 70%;
+        margin-left: 78%;
+    }
+    .historiaJohn {
+        width: 80%;
+        margin-left: 33%;
+    }
+    .historiaRobby {
+        width: 80%;
+        margin-left: 32%;
+    }
+    .logo{
+        margin-left: 9%;
+    }
+    .card{
+        margin-left: -23%;
+    }
+    footer {
+        width: 200%;
+    }
+    }
+}
