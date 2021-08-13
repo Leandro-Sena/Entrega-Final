@@ -1,23 +1,41 @@
 footer{
     color: black;
     width: 100%;
-    height: 100%;   
-    background-color: #000000; 
+    height: -41%;
+    background-color: #000000;
     opacity: .5;
-    margin-block-start:85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     &:hover{
         color: #ffffff;
         opacity: 1;
     }
+    .creador{
+        margin-top: 2%;
+    }
 }
+.newslettertitle{
+    justify-content: center;
+    margin-top: 6%;
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
 .contenedorRedes{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
+    margin: 5%;
+    padding: -6%;
     
     
 
 }
+
+
 .redes{
     margin: 1%;
     text-decoration: none;
@@ -30,5 +48,3 @@ footer{
         font-weight: 500;
         text-align: center;
 }
-
-
