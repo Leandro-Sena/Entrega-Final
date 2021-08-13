@@ -22,15 +22,17 @@ body {
     opacity: 1;
     transform: scale(1.1, 1.1); }
 
-header .logo {
+.logo {
   width: 250px;
   opacity: 0.5;
   background-color: white;
   border-radius: 50%;
   position: relative;
   animation-duration: 3s;
-  animation-delay: 1; }
-  header .logo:hover {
+  animation-delay: 1;
+  opacity: 0.5; }
+  .logo:hover {
+    opacity: 1;
     width: 250px;
     border-width: 10%;
     box-shadow: 0px 0px 15px 15px #8b8b8b; }
@@ -43,11 +45,9 @@ header .logo {
   margin-block-start: 40px; }
   .contenedor-galeria img {
     margin: 0 auto;
-    opacity: 0.5;
     width: 1000px; }
     .contenedor-galeria img:hover {
-      transform: scale(1.2, 1.2);
-      opacity: 1; }
+      transform: scale(1.2, 1.2); }
 
 .contenedorGrupo {
   width: 90%;
@@ -82,15 +82,20 @@ header .logo {
   color: #ffffff; }
 
 .tarjeta__parrafo {
+  font-family: "Bree Serif", serif;
   color: #ffffff;
   line-height: 28px;
   margin-inline: -10px;
   margin-left: -41%;
-  margin-block-start: 9%; }
+  margin-block-start: 9%;
+  font-size: 0.9rem; }
 
 main {
   text-align: center; }
-  main .nosotros, main .continuacion {
+  main .nosotros,
+  main .continuacion {
+    font-family: "Bree Serif", serif;
+    font-size: 0.9rem;
     color: #ffffff;
     width: 50%;
     margin-left: 25%;
@@ -105,6 +110,7 @@ main {
     color: #ffffff; }
 
 .contenedor {
+  color: -texto;
   width: 90%;
   max-width: 80vw;
   margin: 17% auto;
@@ -117,7 +123,7 @@ main {
 
 .integrantes {
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-top: -38%; }
 
 .historiaJim {
@@ -126,8 +132,6 @@ main {
 .fotoJim {
   grid-area: fotoJim;
   color: -texto;
-  font-size: 0.9rem;
-  font-family: "Bree Serif", serif;
   width: 35%;
   object-fit: cover;
   height: 56%;
@@ -136,8 +140,6 @@ main {
 
 .nombre {
   color: -texto;
-  font-size: 0.9rem;
-  font-family: "Bree Serif", serif;
   width: 38%;
   padding: 4%;
   font-size: 1.5rem;
@@ -145,12 +147,11 @@ main {
 
 .historia {
   color: #dde2e2;
-  font-size: 0.9rem;
+  width: 39%;
   font-family: "Bree Serif", serif;
-  width: #dde2e2;
+  font-size: 0.9rem;
   margin-block-start: 25%;
-  text-align: justify;
-  width: 39%; }
+  text-align: justify; }
 
 .historiaRay {
   grid-area: historiaRay;
@@ -158,8 +159,6 @@ main {
 
 .parrafoRay {
   color: #dde2e2;
-  font-size: 0.9rem;
-  font-family: "Bree Serif", serif;
   width: 41%;
   font-size: 0.9rem;
   font-family: "Bree Serif", serif;
@@ -239,7 +238,7 @@ main {
 
 .parrafoDiscos {
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: "Bree Serif", serif;
   margin-top: -13%;
   margin-left: -14%;
@@ -310,6 +309,10 @@ h4 {
   text-align: center; }
 
 @media only screen and (max-width: 1024px) {
+  .history {
+    margin-left: 10%; }
+  .tarjeta__parrafo {
+    margin-left: -31%; }
   .nombre {
     margin-top: -4%;
     margin-left: -1%; }
@@ -338,6 +341,11 @@ h4 {
     border: 2px solid #e40098; } }
 
 @media only screen and (max-width: 768px) {
+  .contenedor-galeria {
+    margin: 0 auto;
+    margin-block-start: 40px; }
+    .contenedor-galeria img {
+      transform: none; }
   .contenedor {
     width: 90%;
     display: grid;
@@ -399,9 +407,9 @@ h4 {
     margin-top: 5%; }
   footer h4 {
     margin-block-start: 55px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    text-align: left; }
+    text-align: center; }
   .nav-item {
     margin: 0%;
     margin-left: 25%;
@@ -426,13 +434,13 @@ h4 {
   .disco {
     margin-top: -11%; }
   .parrafoDiscos {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     width: 100%;
     text-align: justify;
     margin-left: -8%;
     margin-top: -12%; } }
 
-@media only screen and (max-width: 768px) and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
   body {
     width: 50%;
     max-width: fit-content; }
@@ -563,11 +571,11 @@ h4 {
     width: 200%; }
     footer h4 {
       margin-block-start: 55px;
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 500;
-      text-align: left; } }
+      text-align: center; } }
 
-@media only screen and (max-width: 768px) and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   .card {
     margin-left: -10%; }
   .contenedorGrupo {
@@ -577,14 +585,14 @@ h4 {
   .history {
     margin-left: -105%; } }
 
-@media only screen and (max-width: 768px) and (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   .contenedorGrupo {
-    margin-top: 0; }
+    margin-top: 80px; }
   .history {
     margin-left: -119%;
     margin-top: -403%; }
   .tarjeta__parrafo {
-    margin-top: 100%; }
+    margin-top: 68%; }
   .tarjeta__img {
     margin-top: -319%; }
   .contenedor {
@@ -603,4 +611,6 @@ h4 {
   .card {
     margin-left: -23%; }
   footer {
-    width: 200%; } }
+    width: 200%; }
+    footer h4 {
+      font-size: 0.9rem; } }

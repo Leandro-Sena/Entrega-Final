@@ -1,17 +1,11 @@
 $color-texto: #dde2e2;
 @mixin historia($ancho, $color-texto: #dde2e2) {
 	color: $color-texto;
-	font-size: 0.9rem;
-	font-family: "Bree Serif", serif;
 	width: $ancho;
 }
 
 .contenedor {
-	// @include historia(90%, -texto);
-	// max-width: 1000px;
-	// margin: 0 auto;
-	// margin-block-start: 40px;
-	width: 90%;
+	@include historia (90%, -texto);
 	max-width: 80vw;
 	margin: 17% auto;
 	display: grid;
@@ -28,8 +22,7 @@ $color-texto: #dde2e2;
 }
 .integrantes {
 	color: #ffffff;
-	font-size: 2.5rem;
-	// width: 200%;
+	font-size: 1.5rem;
 	margin-top: -38%;
 }
 
@@ -55,10 +48,12 @@ $color-texto: #dde2e2;
 		color: #ffffff;
 }
 .historia {
-	@include historia($color-texto);
+	@include historia(39%,$color-texto);
+	font-family: "Bree Serif", serif;
+	font-size:0.9rem;
 	margin-block-start: 25%;
 	text-align: justify;
-	width: 39%;
+	
 }
 
 // Historia Ray

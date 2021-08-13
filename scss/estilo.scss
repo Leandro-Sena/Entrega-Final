@@ -3,10 +3,15 @@
 @import "historia";
 @import "discografia";
 @import "footer";
-// @import "nosotros";
-$font-size: 1rem;
+$font-size: 0.9rem;
 
 @media only screen and (max-width: 1024px){
+    .history{
+        margin-left: 10%;
+    }
+    .tarjeta__parrafo{
+        margin-left: -31%;
+    }
     .nombre{
         margin-top: -4%;
         margin-left: -1%;
@@ -43,6 +48,17 @@ $font-size: 1rem;
 }
 }
 @media only screen and (max-width: 768px) {
+    .contenedor-galeria {
+        margin: 0 auto;
+        margin-block-start: 40px;
+    
+        img {
+                transform: none;
+        
+            }
+        }
+    
+    
     .contenedor {
         width: 90%;
         display: grid;
@@ -131,7 +147,7 @@ $font-size: 1rem;
             margin-block-start: 55px;
             font-size: $font-size;
             font-weight: 500;
-            text-align: left;
+            text-align: center;
         }
     }
     .nav-item {
@@ -140,9 +156,6 @@ $font-size: 1rem;
         margin-right: 27%;
         text-align: center;
 
-        // .nav-link {
-        //     margin-left: 10%;
-        // }
         &:hover {
             transform: none;
         }
@@ -171,12 +184,13 @@ $font-size: 1rem;
         margin-top: -11%;
     }
     .parrafoDiscos {
-        font-size: 0.8rem;
+        font-size: $font-size;
         width: 100%;
         text-align: justify;
         margin-left: -8%;
         margin-top: -12%;
     }
+}
     @media only screen and (max-width: 425px) {
         body {
             width: 50%;
@@ -333,7 +347,6 @@ $font-size: 1rem;
         }
 
         // Discografia
-        // Discografia
         .albumes {
             display: flex;
             flex-direction: column;
@@ -357,9 +370,9 @@ $font-size: 1rem;
             width: 200%;
             h4 {
                 margin-block-start: 55px;
-                font-size: 1rem;
+                font-size:$font-size;
                 font-weight: 500;
-                text-align: left;
+                text-align: center;
             }
         }
     }
@@ -380,14 +393,14 @@ $font-size: 1rem;
     }
     @media only screen and (max-width: 320px) {
         .contenedorGrupo {
-            margin-top: 0;
+            margin-top: 80px;
         }
         .history {
             margin-left: -119%;
             margin-top: -403%;
         }
         .tarjeta__parrafo {
-            margin-top: 100%;
+            margin-top: 68%;
         }
         .tarjeta__img {
             margin-top: -319%;
@@ -415,6 +428,9 @@ $font-size: 1rem;
         }
         footer {
             width: 200%;
+            h4{
+                font-size:$font-size;
+            }
         }
     }
-}
+
