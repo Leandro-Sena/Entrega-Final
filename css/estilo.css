@@ -309,6 +309,34 @@ h4 {
   font-weight: 500;
   text-align: center; }
 
+@media only screen and (max-width: 1024px) {
+  .nombre {
+    margin-top: -4%;
+    margin-left: -1%; }
+  .historiaRobby {
+    margin-top: 1%; }
+  .historiaJohn {
+    margin-top: -234%; }
+  footer {
+    margin-top: 22%; }
+  .albumes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1%;
+    margin-left: 8%; }
+  .disco {
+    margin-top: -11%; }
+  .parrafoDiscos {
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: justify;
+    margin-left: -8%;
+    margin-top: -12%; }
+  .card {
+    height: 100%;
+    border: 2px solid #e40098; } }
+
 @media only screen and (max-width: 768px) {
   .contenedor {
     width: 90%;
@@ -374,9 +402,15 @@ h4 {
     font-size: 1rem;
     font-weight: 500;
     text-align: left; }
-  .nav-link:hover {
-    transform: none; }
-  main .nosotros, main .continuacion {
+  .nav-item {
+    margin: 0%;
+    margin-left: 25%;
+    margin-right: 27%;
+    text-align: center; }
+    .nav-item:hover {
+      transform: none; }
+  main .nosotros,
+  main .continuacion {
     width: 88%;
     margin-left: 5%;
     text-align: justify; }
@@ -402,6 +436,10 @@ h4 {
   body {
     width: 50%;
     max-width: fit-content; }
+  .nav-item {
+    margin-left: 27%;
+    margin-right: 5%;
+    text-align: center; }
   .carousel.pointer-event {
     width: 200%;
     margin-top: -8%; }
@@ -410,7 +448,7 @@ h4 {
     margin-top: -13%; }
   .tarjeta__parrafo {
     width: 195%;
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-left: -98%;
     margin-right: -105%;
     margin-top: 66%; }
@@ -425,7 +463,8 @@ h4 {
     width: 100%;
     margin-left: 10%;
     margin-top: 14%; }
-  main .nosotros, main .continuacion {
+  main .nosotros,
+  main .continuacion {
     width: 159%;
     margin-left: 9%;
     text-align: justify; }
@@ -534,7 +573,7 @@ h4 {
   .contenedorGrupo {
     margin-top: 0%; }
   .tarjeta__parrafo {
-    margin-top: 118%; }
+    margin-top: 139%; }
   .history {
     margin-left: -105%; } }
 
