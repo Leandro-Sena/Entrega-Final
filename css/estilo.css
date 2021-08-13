@@ -284,6 +284,15 @@ footer {
     color: #ffffff;
     opacity: 1; }
 
+.contenedorRedes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.redes {
+  margin: 1%;
+  text-decoration: none; }
+
 h4 {
   color: #ffffff;
   margin-block-start: 76px;
